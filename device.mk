@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti.recovery
+    android.hardware.boot@1.1-impl-qti.recovery \
+    bootctrl.trinket.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
@@ -36,6 +37,10 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
+
+# Health HAL
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
